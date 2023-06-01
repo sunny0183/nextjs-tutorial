@@ -34,7 +34,6 @@ jobs:
         env:
           NEXTAUTH_URL: https://red-sea-0a971fb10.3.azurestaticapps.net
           MONGO: mongodb+srv://nextjs-tutorial-reader:1234@cluster0.qtq8n.mongodb.net/nextjs-tutorial?retryWrites=true&w=majority
-
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
